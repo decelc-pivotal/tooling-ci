@@ -1,1 +1,24 @@
-#
+# deploy.yml
+---
+platform: linux
+
+inputs:
+- name: hub
+- name: tooling-ci
+
+params:
+  BASELINE:
+
+run:
+  path: bash
+  args:
+  - "-c"
+  - |
+
+    IFS=$'\n'
+
+    printf "#################################################\n"
+    printf "# Deploying ISV TECH HUB                        #\n"
+    printf "#################################################\n"
+
+    ls -al
