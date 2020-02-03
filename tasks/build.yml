@@ -22,3 +22,5 @@ run:
     printf "#################################################\n"
 
     ls -al
+    cd hub
+    ./mvnw clean package
