@@ -22,5 +22,6 @@ run:
     printf "#################################################\n"
 
     ls -al
-    cd hub
+    cd tooling-ci
+    docker
     ./mvnw clean package
