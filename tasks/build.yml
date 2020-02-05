@@ -6,6 +6,9 @@ inputs:
 - name: hub
 - name: tooling-ci
 
+outputs:
+- name: tooling-ci
+
 params:
   BASELINE:
 
@@ -18,10 +21,9 @@ run:
     IFS=$'\n'
 
     printf "#################################################\n"
-    printf "# Building ISV TECH HUB                         #\n"
+    printf "# Building TOOLING CI                           #\n"
     printf "#################################################\n"
 
     ls -al
     cd tooling-ci
-    docker
     ./mvnw clean package
