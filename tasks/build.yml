@@ -7,7 +7,7 @@ inputs:
 - name: tooling-ci
 
 outputs:
-- name: tooling-ci
+- name: hub
 
 params:
   BASELINE:
@@ -25,5 +25,5 @@ run:
     printf "#################################################\n"
 
     ls -al
-    cd tooling-ci/demo
+    cd hub
     ./mvnw clean package
