@@ -25,5 +25,5 @@ run:
     printf "#################################################\n"
 
     ls -al
-    cd tooling-ci
+    cd tooling-ci/demo
     ./mvnw clean package
